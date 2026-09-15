@@ -609,6 +609,46 @@
       border-color: var(--blue-border);
       color: var(--blue);
     }
+    .demo__actions {
+      margin-top: 22px;
+    }
+    .demo__try {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 11px 22px;
+      border-radius: 9px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--blue);
+      box-shadow: 0 4px 16px rgba(59,91,254,0.3);
+      transition: transform 0.15s var(--ease), background 0.2s var(--ease), box-shadow 0.2s var(--ease);
+    }
+    .demo__try:hover {
+      transform: translateY(-2px);
+      background: var(--blue-hover);
+      box-shadow: 0 8px 24px rgba(59,91,254,0.45);
+    }
+    .demo__try svg { width: 16px; height: 16px; }
+    .demo__try--ghost {
+      color: var(--blue);
+      background: transparent;
+      border: 1px solid var(--blue-border);
+      box-shadow: none;
+      margin-left: 10px;
+    }
+    .demo__try--ghost:hover {
+      background: var(--blue-soft);
+      border-color: var(--blue);
+      box-shadow: none;
+    }
+    .demo__try-note {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.76rem;
+      color: var(--text-light);
+    }
 
     /* ---- Includes ---- */
     .includes {
@@ -1389,7 +1429,14 @@
             <li>Empathy and resolution scoring</li>
           </ul>
           <div class="demo__stack">
-            <span>Unity 3D</span><span>AI NPC</span><span>AWS Polly</span><span>Lip sync</span><span>SCORM</span>
+            <span>Unity WebGL</span><span>AI NPC</span><span>Groq LLM</span><span>Voice in and out</span><span>Lip sync</span><span>SCORM</span>
+          </div>
+          <div class="demo__actions">
+            <a class="demo__try" href="https://app.cloud.scorm.com/sc/InvitationConfirmEmail?publicInvitationId=6c3acad0-05cf-4d15-be57-6f31f992e0f3" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Try it live
+            </a>
+            <span class="demo__try-note">Opens in your browser. Allow the microphone to talk to the customer, or type your replies.</span>
           </div>
         </div>
       </div>
@@ -1417,6 +1464,13 @@
           <div class="demo__stack">
             <span>Unity WebGL</span><span>AI tutor</span><span>SCORM 1.2</span><span>SCORM 2004</span>
           </div>
+          <div class="demo__actions">
+            <a class="demo__try" href="https://app.cloud.scorm.com/sc/InvitationConfirmEmail?publicInvitationId=7b0efbba-9d28-4ad3-b045-e1f651a8e1fe" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Try it live
+            </a>
+            <span class="demo__try-note">Opens in your browser. Chat with the AI tutor, then take the assessment.</span>
+          </div>
         </div>
       </div>
 
@@ -1442,6 +1496,13 @@
           </ul>
           <div class="demo__stack">
             <span>Unity WebGL</span><span>JSON bank</span><span>Timer</span><span>SCORM 1.2</span>
+          </div>
+          <div class="demo__actions">
+            <a class="demo__try" href="https://app.cloud.scorm.com/sc/InvitationConfirmEmail?publicInvitationId=45aa7678-4054-4fd9-a875-030b6be45d00" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Try it live
+            </a>
+            <span class="demo__try-note">Opens in your browser. Take the quiz and see the SCORM score report.</span>
           </div>
         </div>
       </div>
